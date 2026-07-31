@@ -1,0 +1,23 @@
+singleQuote: true
+semi: false
+printWidth: 100
+trailingComma: none
+tabWidth: 2
+useTabs: false
+endOfLine: lf
+arrowParens: always
+overrides:
+  - files:
+      - '*.ts'
+      - '*.tsx'
+    options:
+      parser: typescript
+  - files: '*.json'
+    options:
+      parser: json
+  - files: '*.md'
+    options:
+      parser: markdown
+  - files: '*.css'
+    options:
+      parser: css
