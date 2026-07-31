@@ -1,0 +1,196 @@
+# =============================================================================
+# INFYPOS — Monorepo .gitignore
+# Covers: Electron, React, TypeScript, Vite, NestJS, SQLite, PostgreSQL
+# =============================================================================
+
+
+# =============================================================================
+# Dependencies
+# =============================================================================
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+
+# =============================================================================
+# Build & Output Artifacts
+# =============================================================================
+dist/
+build/
+out/
+.output/
+.next/
+.nuxt/
+
+
+# =============================================================================
+# Electron Build Artifacts
+# =============================================================================
+# Electron-builder output directories
+release/
+release-builds/
+app-builds/
+
+# Electron packaged app files
+*.dmg
+*.pkg
+*.AppImage
+*.deb
+*.rpm
+*.exe
+*.msi
+*.snap
+*.nsis
+
+
+# =============================================================================
+# Vite
+# =============================================================================
+*.local
+vite.config.*.timestamp-*
+
+
+# =============================================================================
+# TypeScript
+# =============================================================================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+
+# =============================================================================
+# Environment Variables
+# NEVER commit secrets or environment-specific config
+# =============================================================================
+.env
+.env.*
+!.env.example
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+
+
+# =============================================================================
+# Logs
+# =============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+playwright/.cache/
+
+
+# =============================================================================
+# SQLite — Local Database Files
+# =============================================================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+
+# =============================================================================
+# PostgreSQL
+# =============================================================================
+*.pgsql
+*.sql.bak
+pgdata/
+
+
+# =============================================================================
+# NestJS
+# =============================================================================
+/dist
+/tmp
+
+
+# =============================================================================
+# Cache Directories
+# =============================================================================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.turbo/
+.vite/
+
+
+# =============================================================================
+# IDE & Editor Files
+# =============================================================================
+
+# VSCode — ignore user-specific settings; keep shared recommended settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+
+# Vim / Neovim swap files
+*.swp
+*.swo
+*.swn
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# =============================================================================
+# Operating System Files
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
