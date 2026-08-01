@@ -20,13 +20,11 @@ export interface StoreSlice {}
 // Root Store State — union of all module slices
 // ---------------------------------------------------------------------------
 
+import type { SalesStore } from './modules/sales/types';
+
 /**
  * AppState is the single source-of-truth type for the entire Zustand store.
  * As new modules are added under `modules/`, their slice types are composed
  * here via intersection.
- *
- * Example (Day 3+):
- *   import { AuthSlice } from './modules/authSlice'
- *   export type AppState = AuthSlice & CartSlice
  */
-export type AppState = StoreSlice
+export type AppState = StoreSlice & SalesStore;
